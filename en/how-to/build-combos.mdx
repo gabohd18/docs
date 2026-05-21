@@ -1,0 +1,68 @@
+---
+title: "How to build combos in your POS"
+description: "A combo is its own entity with slots, not the sum of products. Here is how to build them in El Nido so the customer can customize, inventory deducts correctly and reports show reality."
+icon: "package-2"
+---
+
+Many POS systems force you to create "combo 1" as a separate product from its parts. That breaks two things: if you change the burger price, the combo does not update. And if you want to know how many burgers you sold, it does not include combo burgers.
+
+El Nido treats the combo as its own entity with configurable slots. It charges the combo price, deducts real inventory from each part and reports show the truth.
+
+## How to create a combo
+
+1. Go to Products → Combos → New combo.
+2. Name it. Example: "Classic Combo".
+3. Set the combo price (not the sum of parts). Example: $159.
+4. Add slots. Each slot is a customer choice.
+
+**Example combo with 3 slots:**
+
+| Slot | Options | Extra cost |
+|---|---|---|
+| Burger | Classic, Double, BBQ, Vegetarian | Variable by option |
+| Side | French fries, Curly fries, Onion rings | $0 base, $15 extra for rings |
+| Drink | Soda, Water, Iced tea | $0 all |
+
+When the customer builds their combo, the system:
+- Charges the configured combo price ($159).
+- Applies extra slot costs that have them ($15 if rings).
+- Deducts real inventory from each part (1 burger, 1 fries portion, 1 drink).
+
+## Slot rules
+
+| Rule type | What it does |
+|---|---|
+| **Single choice** | Customer picks 1 from the list (the most common) |
+| **Multiple choice** | Customer picks 2 or more (example: "pick 2 tacos from the list") |
+| **Optional** | Slot that can be skipped (example: "add a drink if you want") |
+| **With extra cost** | Some options add to the base price |
+| **With "without/without" rule** | Customer removes ingredients (no onion, no pickles) |
+
+## Common cases
+
+**Family pizza combo.**
+3 slots: size (small, medium, family), crust (thin, traditional, whole wheat), 2 toppings to pick from a list. Combo price $389. Customer picks and the system builds their combo with inventory deduction by topping.
+
+**Café breakfast combo.**
+2 slots: hot drink (coffee, latte, cappuccino) and food (chilaquiles, sandwich, fruit). Combo price $129 vs $159 separate. Attractive for cross-sell.
+
+**2-burger takeaway combo.**
+1 slot with "pick 2" rule from the burger list. Applies when you sell to couples or duos.
+
+## Common mistakes
+
+- **Charging the combo as a manual sum.** The POS does not understand it is a combo and reports show product sales without knowing they came from a combo.
+- **Not deducting inventory from parts.** If the combo does not deduct burger, fries and drink from real stock, you sell what you do not have.
+- **Not measuring combo margin.** If the combo costs $159 and the sum of real costs is $80, your margin is 50%. If costs go up (more expensive beef), you check whether the combo is still profitable.
+
+## When you do NOT need combos
+
+- You sell individual products without packages.
+- You do not run cross-sell offers.
+- Your menu has fewer than 10 products.
+
+For those cases, individual products with modifiers are enough.
+
+<Card title="Try El Nido with advanced combos" icon="arrow-right" href="https://elnidopos.com">
+60 days free of the full plan. 2-minute setup.
+</Card>

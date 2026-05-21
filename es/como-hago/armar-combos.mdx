@@ -1,0 +1,68 @@
+---
+title: "Cómo armar combos en tu POS"
+description: "Un combo es una entidad propia con slots, no la suma de productos. Así lo armas en El Nido para que el cliente lo personalice, el inventario descuente correcto y los reportes te muestren la realidad."
+icon: "package-2"
+---
+
+Mucho POS te obliga a crear "combo 1" como un producto separado de sus partes. Eso rompe dos cosas: si cambias el precio de la hamburguesa no se actualiza el combo, y si quieres saber cuántas hamburguesas vendiste, no incluye las del combo.
+
+El Nido trata el combo como entidad propia con slots configurables. Cobra el precio del combo, descuenta el inventario real de cada parte y los reportes te muestran la verdad.
+
+## Cómo crear un combo
+
+1. Ve a Productos → Combos → Nuevo combo.
+2. Ponle nombre. Ejemplo: "Combo Clásico".
+3. Define el precio del combo (no la suma de partes). Ejemplo: $159.
+4. Agrega slots. Cada slot es una elección para el cliente.
+
+**Ejemplo de combo con 3 slots:**
+
+| Slot | Opciones | Costo extra |
+|---|---|---|
+| Hamburguesa | Clásica, Doble, BBQ, Vegetariana | Variable según opción |
+| Acompañamiento | Papas a la francesa, Papas curly, Aros de cebolla | $0 base, $15 extra por aros |
+| Bebida | Refresco, Agua, Té helado | $0 todas |
+
+Cuando el cliente arma su combo, el sistema:
+- Cobra el precio del combo configurado ($159).
+- Aplica costos extra de slots que lo tengan ($15 si pidió aros).
+- Descuenta inventario real de cada parte (1 hamburguesa, 1 porción de papas, 1 refresco).
+
+## Reglas de slots
+
+| Tipo de regla | Para qué sirve |
+|---|---|
+| **Una opción única** | Cliente elige 1 de la lista (la más común) |
+| **Múltiples opciones** | Cliente elige 2 o más (ejemplo: "elige 2 tacos de la lista") |
+| **Opcional** | Slot que se puede saltar (ejemplo: "agrega bebida si quieres") |
+| **Con extra cost** | Algunas opciones suman al precio base |
+| **Con regla "sin/sin"** | Cliente quita ingredientes (sin cebolla, sin pickles) |
+
+## Casos comunes
+
+**Combo familiar de pizza.**
+3 slots: tamaño (chica, mediana, familiar), masa (delgada, tradicional, integral), 2 toppings a elegir de una lista. Precio combo $389. Cliente elige y el sistema arma su combo con descuento de inventario por topping.
+
+**Combo desayuno cafetería.**
+2 slots: bebida caliente (café, latte, cappuccino) y comida (chilaquiles, sándwich, fruta). Precio combo $129 vs $159 por separado. Atractivo para venta cruzada.
+
+**Combo de 2 hamburguesas para llevar.**
+1 slot con regla "elige 2" de la lista de hamburguesas. Aplica cuando vendes a parejas o duplas.
+
+## Errores típicos
+
+- **Cobrar el combo como suma manual.** El POS no entiende que es un combo y los reportes te dicen ventas por producto individual sin saber que vinieron de un combo.
+- **No descontar inventario de partes.** Si el combo no descuenta hamburguesa, papas y bebida del stock real, vas a vender lo que no tienes.
+- **No medir el margen del combo.** Si el combo cuesta $159 y la suma de costos reales es $80, tu margen es 50%. Si los costos suben (carne más cara), tienes que ver si el combo sigue siendo rentable.
+
+## Cuándo NO necesitas combos
+
+- Vendes productos individuales sin paquetes.
+- No haces ofertas cruzadas.
+- Tu menú tiene menos de 10 productos.
+
+Para esos casos, productos sueltos con modificadores son suficientes.
+
+<Card title="Prueba El Nido con combos avanzados" icon="arrow-right" href="https://elnidopos.com">
+60 días gratis del plan completo. Setup en 2 minutos.
+</Card>

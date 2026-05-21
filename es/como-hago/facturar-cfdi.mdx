@@ -1,0 +1,86 @@
+---
+title: "Cómo facturar CFDI 4.0 desde tu POS"
+description: "Auto-factura por QR para tus clientes, CSD configurado en El Nido, complementos de pago y emisión directa desde el ticket. Sin software extra ni hojas de Excel."
+icon: "file-text"
+---
+
+Si vendes en México, antes o después un cliente te va a pedir factura. La opción tradicional es subir cada venta a otro software de facturación, capturar manual al cliente y emitir. Eso es trabajo doble. El Nido emite CFDI 4.0 directo desde el POS, y ofrece auto-factura por QR para que el cliente facture por su cuenta.
+
+## Los 3 modos de facturar con El Nido
+
+### Modo 1: Facturación en el momento de la venta
+
+Antes de cerrar el ticket, el cliente pide factura:
+
+1. Tocas "Facturar" en la pantalla de cobro.
+2. Capturas los datos fiscales del cliente (RFC, razón social, uso de CFDI, régimen).
+3. Cierras el ticket.
+4. El XML y PDF de la factura se generan automático.
+5. Se envían al cliente por email o WhatsApp.
+
+### Modo 2: Auto-factura por QR
+
+El cliente recibe ticket con QR. Más tarde escanea con su celular y captura sus datos sin que tú tengas que estar presente.
+
+1. Ticket impreso o digital lleva QR.
+2. Cliente abre el QR en su celular.
+3. Llena formulario con sus datos fiscales.
+4. Factura se emite automática y se le envía a su email.
+5. Tú no tienes que hacer nada.
+
+Útil para negocios con alto volumen donde no quieres parar el flujo para facturar.
+
+### Modo 3: Facturación retroactiva
+
+Si el cliente pidió factura después (al día siguiente, en la semana), entras al ticket original desde Reportes, agregas datos fiscales y emites.
+
+Funciona dentro del mismo mes calendario o según las reglas del SAT vigentes.
+
+## Lo que necesitas configurar una sola vez
+
+1. **CSD (Certificado de Sello Digital).** Los archivos .key, .cer y la contraseña los obtienes del portal del SAT. Los subes una vez a El Nido y quedan guardados.
+2. **Régimen fiscal de tu negocio.** El Nido te muestra el catálogo del SAT y eliges el tuyo.
+3. **Serie y folio inicial.** Si vienes de otro sistema, capturas el folio donde te quedaste para no romper consecutivo.
+
+## Complemento de pago (PPD)
+
+Si vendes a crédito o con plazo de pago, las facturas se emiten como PPD (Pago en Parcialidades o Diferido). Cuando el cliente paga, El Nido emite el complemento de pago automático con la fecha y método.
+
+Útil para B2B o ventas grandes.
+
+## Cancelaciones
+
+Si emites una factura con error o el cliente la pide cancelada:
+
+1. Vas a Reportes → Facturas emitidas.
+2. Buscas la factura.
+3. Tocas "Cancelar" y eliges el motivo (01, 02, 03, 04 según catálogo SAT).
+4. Si el cliente ya tiene la factura, el SAT le pide aceptar cancelación.
+5. Cuando se confirma, queda registrado.
+
+## Casos comunes
+
+**El cliente pide factura cuando ya cerraste el ticket.**
+Sin drama. Buscas el ticket en Reportes, agregas datos fiscales, emites. Dentro del mismo mes funciona.
+
+**El cliente da RFC genérico (XAXX010101000).**
+Es válido si es público en general. El Nido lo acepta y emite con uso de CFDI "S01 Sin efectos fiscales".
+
+**Tienes varias sucursales y cada una factura.**
+Configuras un CSD por sucursal o uno único si todas operan bajo el mismo RFC. Cada factura lleva la serie de la sucursal que la emitió.
+
+## Cuándo NO necesitas facturación CFDI
+
+- Vendes 100% a consumidor final que nunca pide factura.
+- Tu RFC es bajo régimen RESICO con facturación simplificada.
+- No tienes obligación fiscal de emitir CFDI todavía.
+
+Para esos casos puedes operar sin la facturación activa y activarla cuando lo necesites.
+
+## Costo
+
+La facturación CFDI 4.0 está incluida en los planes Lite y Business sin costo extra por timbre. Otros sistemas cobran $1-$3 MXN por cada factura emitida. El Nido no.
+
+<Card title="Prueba El Nido con CFDI 4.0 incluido" icon="arrow-right" href="https://elnidopos.com">
+60 días gratis del plan Business. Sin costo por timbre.
+</Card>

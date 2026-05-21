@@ -1,0 +1,86 @@
+---
+title: "How to issue CFDI 4.0 invoices from your POS"
+description: "Self-service invoicing via QR for your customers, CSD configured in El Nido, payment complements and direct issuance from the ticket. No extra software, no spreadsheets."
+icon: "file-text"
+---
+
+If you sell in Mexico, sooner or later a customer will ask for a CFDI invoice. The traditional path is uploading each sale to separate invoicing software, manually capturing the customer and issuing. That is duplicated work. El Nido issues CFDI 4.0 directly from the POS, and offers self-service invoicing via QR for customers to invoice themselves.
+
+## The 3 ways to invoice with El Nido
+
+### Mode 1: Invoicing at the moment of sale
+
+Before closing the ticket, the customer asks for an invoice:
+
+1. Tap "Invoice" on the checkout screen.
+2. Capture the customer's tax data (RFC, business name, CFDI usage, regime).
+3. Close the ticket.
+4. The XML and PDF of the invoice generate automatically.
+5. They send to the customer by email or WhatsApp.
+
+### Mode 2: Self-service invoicing via QR
+
+The customer receives a ticket with a QR code. Later they scan it from their phone and enter their data without you being present.
+
+1. Printed or digital ticket carries a QR.
+2. Customer opens the QR on their phone.
+3. Fills in their tax data.
+4. Invoice issues automatically and sends to their email.
+5. You do not have to do anything.
+
+Useful for high-volume businesses where you do not want to stop the flow to invoice.
+
+### Mode 3: Retroactive invoicing
+
+If the customer asked for an invoice later (next day, that week), you go to the original ticket from Reports, add tax data and issue.
+
+Works within the same calendar month or according to SAT rules in effect.
+
+## What you configure once
+
+1. **CSD (Digital Seal Certificate).** The .key, .cer files and password come from the SAT portal. You upload them once to El Nido and they stay saved.
+2. **Tax regime of your business.** El Nido shows you the SAT catalog and you pick yours.
+3. **Series and starting folio.** If you come from another system, you enter the folio you left off at so you do not break the sequence.
+
+## Payment complement (PPD)
+
+If you sell on credit or with payment terms, invoices issue as PPD (Pago en Parcialidades o Diferido). When the customer pays, El Nido issues the payment complement automatically with the date and method.
+
+Useful for B2B or large sales.
+
+## Cancellations
+
+If you issue an invoice with an error or the customer asks to cancel:
+
+1. Go to Reports → Issued invoices.
+2. Find the invoice.
+3. Tap "Cancel" and choose the reason (01, 02, 03, 04 per SAT catalog).
+4. If the customer already has the invoice, SAT asks them to accept the cancellation.
+5. Once confirmed, it logs.
+
+## Common cases
+
+**Customer asks for invoice after you closed the ticket.**
+No drama. Find the ticket in Reports, add tax data, issue. Within the same month it works.
+
+**Customer gives generic RFC (XAXX010101000).**
+Valid for general public sales. El Nido accepts it and issues with CFDI usage "S01 No tax effects".
+
+**You have several locations and each one invoices.**
+You configure one CSD per location or a single one if all operate under the same RFC. Each invoice carries the series of the location that issued it.
+
+## When you do NOT need CFDI invoicing
+
+- You sell 100% to end consumers who never ask for invoices.
+- Your RFC is under RESICO regime with simplified invoicing.
+- You have no tax obligation to issue CFDI yet.
+
+For those cases you can operate without invoicing active and turn it on when needed.
+
+## Cost
+
+CFDI 4.0 invoicing is included in Lite and Business plans at no extra cost per stamp. Other systems charge MXN $1-$3 per invoice issued. El Nido does not.
+
+<Card title="Try El Nido with CFDI 4.0 included" icon="arrow-right" href="https://elnidopos.com">
+60 days free of the Business plan. No cost per stamp.
+</Card>

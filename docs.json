@@ -29,7 +29,39 @@
             "icon": "play",
             "pages": [
               "es/index",
-              "es/que-es-un-pos"
+              "es/que-es-un-pos",
+              "es/mejor-pos-mexico-2026",
+              "es/pos-gratis-mexico"
+            ]
+          },
+          {
+            "group": "Por tipo de negocio",
+            "icon": "store",
+            "pages": [
+              "es/verticales/abarrotes-y-tienditas",
+              "es/verticales/cafeterias",
+              "es/verticales/restaurantes",
+              "es/verticales/panaderias",
+              "es/verticales/hamburgueserias-y-pizzerias"
+            ]
+          },
+          {
+            "group": "Cómo hago...",
+            "icon": "list-checks",
+            "pages": [
+              "es/como-hago/cobrar-con-varios-metodos",
+              "es/como-hago/armar-combos",
+              "es/como-hago/controlar-inventario",
+              "es/como-hago/operar-multiples-sucursales",
+              "es/como-hago/facturar-cfdi"
+            ]
+          },
+          {
+            "group": "Producto",
+            "icon": "package",
+            "pages": [
+              "es/precios",
+              "es/asistente-ai"
             ]
           }
         ]
@@ -42,7 +74,39 @@
             "icon": "play",
             "pages": [
               "en/index",
-              "en/what-is-a-pos"
+              "en/what-is-a-pos",
+              "en/best-pos-mexico-2026",
+              "en/free-pos-mexico"
+            ]
+          },
+          {
+            "group": "By business type",
+            "icon": "store",
+            "pages": [
+              "en/industries/convenience-stores",
+              "en/industries/cafes",
+              "en/industries/restaurants",
+              "en/industries/bakeries",
+              "en/industries/burgers-and-pizza"
+            ]
+          },
+          {
+            "group": "How to...",
+            "icon": "list-checks",
+            "pages": [
+              "en/how-to/accept-multiple-payment-methods",
+              "en/how-to/build-combos",
+              "en/how-to/manage-inventory",
+              "en/how-to/run-multiple-locations",
+              "en/how-to/invoice-cfdi"
+            ]
+          },
+          {
+            "group": "Product",
+            "icon": "package",
+            "pages": [
+              "en/pricing",
+              "en/ai-assistant"
             ]
           }
         ]
