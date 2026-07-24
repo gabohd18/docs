@@ -50,13 +50,9 @@
             "icon": "list-checks",
             "pages": [
               "es/como-hago/cobrar-con-varios-metodos",
-              "es/como-hago/armar-combos",
-              "es/como-hago/controlar-inventario",
               "es/como-hago/registrar-merma",
               "es/como-hago/corte-parcial-reporte-x",
-              "es/como-hago/operar-multiples-sucursales",
-              "es/como-hago/ver-cuentas-pendientes-por-sucursal",
-              "es/como-hago/facturar-cfdi"
+              "es/como-hago/ver-cuentas-pendientes-por-sucursal"
             ]
           },
           {
@@ -91,17 +87,6 @@
               "en/industries/restaurants",
               "en/industries/bakeries",
               "en/industries/burgers-and-pizza"
-            ]
-          },
-          {
-            "group": "How to...",
-            "icon": "list-checks",
-            "pages": [
-              "en/how-to/accept-multiple-payment-methods",
-              "en/how-to/build-combos",
-              "en/how-to/manage-inventory",
-              "en/how-to/run-multiple-locations",
-              "en/how-to/invoice-cfdi"
             ]
           },
           {
