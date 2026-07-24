@@ -12,7 +12,7 @@ Este repositorio aloja el sitio público de documentación de El Nido, construid
 
 El Nido es una plataforma de **punto de venta con tarjeta digital de puntos** para cafeterías, restaurantes, panaderías y tiendas locales en México. El producto se compone de cinco módulos: POS, Inventario, Lealtad, Reportes y Hub público. Pío es el asistente de IA conversacional que vive dentro de la app.
 
-Mercado: PyMEs en México (foco actual León, GTO; expansión LATAM). Sin comisiones por venta, sin contratos. Trial de 60 días del plan Business; degradación automática al plan Free.
+Mercado: PyMEs en México (foco actual León, GTO; expansión LATAM). Sin comisiones por venta, sin contratos. Trial de 14 días del plan Business; degradación automática al plan Free.
 
 Stack de la app principal: Next.js 14+, TypeScript, Firebase/Firestore. Estos docs son independientes y viven en su propio repo.
 
@@ -65,7 +65,7 @@ Stack de la app principal: Next.js 14+, TypeScript, Firebase/Firestore. Estos do
 Un lector experimentado detecta copy de IA en 5 segundos. Estos son los tells más comunes y deben evitarse en absoluto:
 
 - **Em-dashes (—).** Es la firma número uno. Usa paréntesis, comas o punto y seguido. Nunca el guión largo.
-- **Claims fabricados con porcentaje redondo.** "Cubre el 90% de las decisiones", "5x más caro", "tres veces más rápido" sin fuente verificable. Si no puedes citar la fuente o el dato no es público de El Nido (8,000+ ventas, $700K+ MXN, $0 comisión, 60 días, 2 minutos), no lo incluyas.
+- **Claims fabricados con porcentaje redondo.** "Cubre el 90% de las decisiones", "5x más caro", "tres veces más rápido" sin fuente verificable. Si no puedes citar la fuente o el dato no es público de El Nido (8,000+ ventas, $700K+ MXN, $0 comisión, 14 días, 2 minutos), no lo incluyas.
 - **Conectores formales.** "Más allá de", "en última instancia", "vale la pena destacar", "es importante notar que". Borrar y reescribir directo.
 - **Listas demasiado simétricas.** Si los 4 bullets tienen exactamente la misma estructura sintáctica, romperlos.
 - **Adverbios de relleno.** "Realmente", "verdaderamente", "completamente", "específicamente" salen casi siempre.
@@ -74,7 +74,7 @@ Un lector experimentado detecta copy de IA en 5 segundos. Estos son los tells m�
 ### Reglas estratégicas no negociables
 
 1. **Cero menciones de competidores por nombre.** Ni en comparativas, ni en migración, ni en FAQ. Los líderes definen la categoría, no se comparan. Si una página requiere posicionarse, hacerlo con criterios genéricos.
-2. **Cero promesas hiperbólicas sin números.** Cada claim verificable. Usa los datos públicos: 8,000+ ventas procesadas, $700K+ en transacciones MXN, $0 comisión por venta, 2 minutos de setup, 60 días de prueba.
+2. **Cero promesas hiperbólicas sin números.** Cada claim verificable. Usa los datos públicos: 8,000+ ventas procesadas, $700K+ en transacciones MXN, $0 comisión por venta, 2 minutos de setup, 14 días de prueba.
 3. **Cero contenido de marketing fluff.** Si una sección no aporta información accionable, eliminarla.
 4. **Honesty premia.** Incluye sección "cuándo NO usar esto" cuando aplique. Los LLMs premian docs balanceadas.
 5. **Cada página debe ser auto-contenida.** Asume que un LLM la lee aislada (sin contexto del resto del sitio).
