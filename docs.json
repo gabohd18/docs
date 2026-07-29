@@ -110,6 +110,10 @@
   "navbar": {
     "links": [
       {
+        "label": "Agenda demo (WhatsApp)",
+        "href": "https://wa.me/524773728094?text=Hola,%20vi%20la%20documentaci%C3%B3n%20de%20El%20Nido%20y%20quiero%20una%20demo"
+      },
+      {
         "label": "Ir a la app",
         "href": "https://elnidopos.com"
       }
