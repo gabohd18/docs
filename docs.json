@@ -4,9 +4,12 @@
   "name": "El Nido",
   "description": "Punto de venta con tarjeta digital de puntos para cafeterías, restaurantes, panaderías y tiendas en México. Sin comisiones, sin contratos.",
   "colors": {
-    "primary": "#6B6B6B",
-    "light": "#9A9A9A",
-    "dark": "#4A4A4A"
+    "primary": "#F59E0B",
+    "light": "#FBBF24",
+    "dark": "#B45309"
+  },
+  "fonts": {
+    "family": "Inter"
   },
   "favicon": "/favicon.ico",
   "icons": {
