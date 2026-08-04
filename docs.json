@@ -111,8 +111,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/elnido-bird.png",
+    "dark": "/logo/elnido-bird-white.png"
   },
   "navbar": {
     "links": [
