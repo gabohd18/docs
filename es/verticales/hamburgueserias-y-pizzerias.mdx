@@ -1,64 +1,67 @@
 ---
 title: "POS para hamburgueserías y pizzerías"
-description: "Punto de venta para hamburgueserías y pizzerías en México: combos con slots, modificadores complejos, takeaway, delivery y comandas con tiempos."
+description: "Punto de venta para hamburgueserías y pizzerías en México: combos con slots, modificadores complejos, comandas a cocina y estado de resultados en vivo."
 icon: "pizza"
 ---
 
-Una hamburguesería o pizzería tiene operación parecida pero con dos dolores únicos: los combos (que casi todos venden y casi ningún POS maneja bien) y los modificadores complejos (queso amarillo o blanco, pan brioche o normal, agregar tocino, sin cebolla, mostaza extra, etc).
+Una hamburguesería o pizzería tiene dos dolores únicos: los combos (que casi todos venden y casi ningún POS maneja bien) y los modificadores complejos (queso amarillo o blanco, pan brioche o normal, agregar tocino, sin cebolla, mostaza extra). Si tu POS no los resuelve en un solo flujo, terminas creando 200 productos para lo que en realidad son 10 hamburguesas con variaciones.
 
-Si tu POS no resuelve combos como entidad propia y modificadores en un solo flujo, vas a estar creando 200 productos distintos para lo que en realidad son 10 hamburguesas con variaciones.
+## Lo que El Nido resuelve para tu hamburguesería o pizzería
 
-## Lo que tu POS tiene que hacer si vendes hamburguesas o pizza
-
-| Función | Por qué importa |
+| Función | Qué hace |
 |---|---|
 | **Combos con slots** | "Hamburguesa + papas + bebida" donde el cliente elige cada slot |
-| **Modificadores anidados** | Pan, queso, tipo de carne, agregados (tocino, aguacate, queso extra) |
-| **Reglas "sin/sin"** | Sin cebolla, sin mayonesa, sin pickles, todo en un toque |
-| **Takeaway vs delivery vs comer aquí** | Distinguir tipos de orden con tiempos esperados distintos |
-| **Comanda con tiempos** | Cocina ve "esta hamburguesa lleva 8 minutos" y prioriza |
-| **Multi-pago en un ticket** | Cliente paga combo en efectivo, agregados en transfer |
+| **Modificadores** | Pan, queso, tipo de carne y agregados (tocino, aguacate, queso extra) |
+| **Reglas sin** | Sin cebolla, sin mayonesa, sin pickles, en un toque |
+| **Comandas a cocina** | Cada orden cae a la pantalla de cocina con su hora |
+| **Estado de resultados** | Ves tu margen real, incluido el costo de cada combo |
 
-## Cómo lo usa una hamburguesería típica con El Nido
+## Cómo lo usa una hamburguesería con El Nido
 
-Viernes noche:
+Viernes por la noche:
 
-- Cliente pide combo: 1 hamburguesa clásica con tocino y queso amarillo (sin pickles), papas curly, refresco de cola.
-- Cajera arma el combo en 4 toques. El POS aplica el precio del combo (no la suma de partes).
-- Comanda a cocina con timer. Después de 5 minutos parpadea amarillo, después de 10 rojo.
-- Ticket impreso con desglose para que el cliente vea qué pidió, total con propina sugerida.
+- Cliente pide combo: hamburguesa clásica con tocino y queso amarillo (sin pickles), papas curly, refresco.
+- La cajera arma el combo en unos toques. El POS cobra el **precio del combo**, no la suma de las partes.
+- La comanda cae a la **pantalla de cocina** con su hora.
+- El ticket sale con el desglose y la propina sugerida.
 
-Caso real: Taviano Pizzería en León (2 sucursales) usa combos, modificadores complejos y multi-sucursal con El Nido desde abril 2026.
+Caso real: Taviano Pizzería en León (2 sucursales) usa combos, modificadores y multi-sucursal con El Nido desde abril 2026.
 
 ## Combos como entidad propia, no como suma
 
-Mucho POS te obliga a crear "combo 1" como producto separado de sus partes. Eso es un problema: si cambias el precio de la hamburguesa, no se actualiza el combo. Y si quieres saber cuántas hamburguesas vendiste, no incluye las del combo.
+Muchos POS te obligan a crear "combo 1" como un producto separado de sus partes. Eso rompe dos cosas: si cambias el precio de la hamburguesa, no se actualiza el combo; y si quieres saber cuántas hamburguesas vendiste, no cuenta las del combo.
 
-El Nido resuelve esto: el combo es entidad propia con slots elegibles. Cuando el cliente arma su combo, el POS descuenta inventario de hamburguesa, papas y bebida, pero cobra el precio combo. Y los reportes te muestran ventas reales por producto.
+El Nido trata el combo como entidad propia con slots elegibles. Cuando el cliente lo arma, el POS descuenta el inventario de hamburguesa, papas y bebida, pero cobra el precio del combo. Y los reportes te muestran las ventas reales por producto.
 
-## Delivery + takeaway
+## Mide tu margen por combo
 
-Si vendes por apps (Uber, Rappi, DiDi) puedes registrar el origen del pedido y al cierre del día ver cuánto vino de cada canal. Esto es importante porque las apps cobran comisiones distintas (25-30%) y te interesa saber si delivery te conviene o no.
+Registras tus **gastos** e insumos (a mano o con la foto del ticket) y El Nido te muestra tu **estado de resultados en vivo**: cuánto te cuesta cada combo, tus mermas y la utilidad que queda. Así sabes si el combo que más vendes es el que más te deja.
 
-## Tarjeta de puntos para hamburgueserías
+## Tarjeta de puntos para tus clientes
 
-Cliente recurrente acumula puntos digitales en Apple Wallet. Canjea por combo gratis al llegar a 10 visitas, o por descuento en su próxima orden.
+Un cliente recurrente acumula **puntos digitales** en su tarjeta (con Apple Wallet y Google Pay desde el plan Pro). Canjea por combo gratis a las 10 visitas o por descuento en su próxima orden.
 
-## Cuándo NO necesitas POS para tu hamburguesería
+## Cuándo NO necesitas un POS para tu hamburguesería
 
 - Vendes 10 hamburguesas al día desde tu cochera.
 - No tienes empleados.
-- No tienes app de delivery.
-- No te interesa medir margen por combo.
+- No te interesa medir el margen por combo.
 
-Para ese tamaño, una libreta sirve. El POS empieza a justificarse cuando hay volumen, varias estaciones de cocina, combos frecuentes o crecimiento a multi-sucursal.
+Para ese tamaño, una libreta sirve. El POS empieza a justificarse cuando hay volumen, combos frecuentes o crecimiento a varias sucursales.
 
 ## Cuánto cuesta para tu tamaño
 
-- **Lite:** $349/mes. Hamburguesería o pizzería chica, 1 sucursal.
-- **Business:** $999/mes. Combos avanzados, KDS, modificadores complejos, recetas con costo, asistente AI.
-- **Multi-sucursal:** desde $1,499/mes. Catálogo compartido entre sucursales.
+- **Starter ($349/mes):** hamburguesería o pizzería chica, 1 sucursal. Combos, modificadores y lealtad básica.
+- **Pro ($699/mes):** estado de resultados en vivo, analytics y tarjeta de puntos con niveles y Wallet.
+- **Business ($999/mes):** todo ilimitado más Pío, tu asistente AI.
 
-<Card title="Prueba El Nido 14 días gratis para tu hamburguesería o pizzería" icon="arrow-right" href="https://elnidopos.com">
-Setup en 2 minutos. Sin contrato. Sin tarjeta de crédito.
-</Card>
+¿Varias sucursales? [Escríbenos por WhatsApp](https://wa.me/524773728094?text=Hola,%20tengo%20una%20hamburgueser%C3%ADa%20o%20pizzer%C3%ADa%20con%20varias%20sucursales%20y%20quiero%20saber%20m%C3%A1s) y te armamos el número para tu caso.
+
+<CardGroup cols={2}>
+  <Card title="Prueba El Nido 14 días gratis" icon="arrow-right" href="https://elnidopos.com">
+    Setup en 2 minutos. Sin contrato. Sin tarjeta de crédito.
+  </Card>
+  <Card title="Agenda una demo por WhatsApp" icon="message-circle" href="https://wa.me/524773728094?text=Hola,%20tengo%20una%20hamburgueser%C3%ADa%20o%20pizzer%C3%ADa%20y%20quiero%20una%20demo">
+    Te mostramos El Nido con tu menú de combos en 15 minutos.
+  </Card>
+</CardGroup>
