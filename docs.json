@@ -11,7 +11,7 @@
   "fonts": {
     "family": "Inter"
   },
-  "favicon": "/favicon.ico",
+  "favicon": "/favicon.png",
   "icons": {
     "library": "lucide"
   },
@@ -19,7 +19,11 @@
     "eyebrows": "breadcrumbs"
   },
   "contextual": {
-    "options": ["copy", "view", "assistant"]
+    "options": [
+      "copy",
+      "view",
+      "assistant"
+    ]
   },
   "navigation": {
     "languages": [
