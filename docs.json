@@ -57,6 +57,7 @@
             "icon": "list-checks",
             "pages": [
               "es/como-hago/cobrar-con-varios-metodos",
+              "es/como-hago/flujos-de-cobro",
               "es/como-hago/registrar-merma",
               "es/como-hago/corte-parcial-reporte-x",
               "es/como-hago/ver-cuentas-pendientes-por-sucursal",
