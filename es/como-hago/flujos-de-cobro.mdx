@@ -19,30 +19,63 @@ La idea de fondo: en **servicio en mesa** la cocina empieza a preparar apenas pi
 
 ## Flujo de cuenta abierta (servicio en mesa)
 
-El comensal se sienta, va pidiendo a lo largo de su visita, y todo se acumula en una cuenta con el nombre de la mesa. Paga al final.
+El comensal se sienta, va pidiendo a lo largo de su visita, y todo se acumula en una cuenta con el nombre de la mesa. Paga al final. Así se ve el flujo completo, paso a paso.
 
 <Steps>
+  <Step title="Arma la orden y elige las variedades del combo">
+    Toca los productos para agregarlos a la orden. Cuando un producto es un **combo**, El Nido abre una ventana para que elijas qué lleva dentro. En el ejemplo, el **Combo Croissant** te deja escoger el café (**Americano**) y luego su tamaño (**Mediano** o **Grande**), todo sin cambiar el precio del combo.
+    <Frame>
+      <img src="/images/es/flujos-cobro/combo-variedad.jpeg" alt="Ventana del Combo Croissant con los selectores de croissant y de café" />
+    </Frame>
+    <Frame>
+      <img src="/images/es/flujos-cobro/combo-tamano.jpeg" alt="Submenú para elegir el tamaño del café dentro del combo: Mediano 12 oz o Grande 16 oz" />
+    </Frame>
+    <Note>
+      Los combos son un producto con variantes internas. Configuras una vez qué opciones ofrece cada combo y, al venderlo, tu cajero solo elige. Así vendes paquetes rápido y sin errores, aunque cada cliente arme el suyo distinto.
+    </Note>
+  </Step>
   <Step title="Abre la cuenta de la mesa">
-    En el POS arma la primera orden y toca **Cobrar**. En vez de efectivo o tarjeta, elige **Cuenta**. Toca **Crear nuevo socio**, escribe el nombre de la mesa (por ejemplo **Mesa 1**) y confirma con **Crear Socio**. Luego toca **Apuntar a Cuenta**.
+    Con la orden lista toca **Cobrar**. En vez de efectivo o tarjeta, elige **Cuenta**. Toca **Crear nuevo socio**, escribe el nombre de la mesa (por ejemplo **Mesa 1**) y confirma con **Crear Socio**. Luego toca **Apuntar a Cuenta**.
     <Frame>
       <img src="/images/es/flujos-cobro/01-abrir-cuenta.jpeg" alt="Diálogo de cobro con la opción Cuenta y el botón Apuntar a Cuenta" />
     </Frame>
+    <Note>
+      La "cuenta" es un socio (cliente) al que le vas apuntando consumos. Puedes nombrarla como la mesa (**Mesa 1**, **Terraza 3**) o con el nombre del cliente. No necesitas un mapa de mesas: cada cuenta abierta es una mesa activa.
+    </Note>
   </Step>
   <Step title="La comanda llega a la cocina al instante">
-    Al apuntar la orden, El Nido te ofrece **Imprimir comanda**. La cocina recibe la orden de inmediato, aunque el cliente todavía no paga. El ticket se genera hasta que cobres la cuenta al final.
+    Al apuntar la orden, El Nido te ofrece **Imprimir comanda**. La cocina recibe la orden de inmediato, aunque el cliente todavía no paga. El ticket del cliente se genera hasta que cobres la cuenta al final.
     <Frame>
       <img src="/images/es/flujos-cobro/02-comanda.jpeg" alt="Aviso de imprimir comanda: la venta se registró en la cuenta, el ticket se recibe al cobrar" />
     </Frame>
-    En **Pedidos**, la cocina marca la orden como **Preparar**, **Listo** y **Entregar**.
+    En **Pedidos**, la cocina mueve cada orden por sus estados: **Pendiente**, **Preparar**, **Listo para entregar** y **Entregar**. Así el mesero sabe qué está listo para llevar a la mesa.
   </Step>
   <Step title="Agrega más órdenes a la misma mesa">
-    Cuando la mesa pide otra ronda, repite: arma la orden, toca **Cobrar → Cuenta**, busca **Mesa 1** en la lista y toca **Apuntar a Cuenta**. Cada orden manda su comanda a cocina y se suma a la misma cuenta.
-  </Step>
-  <Step title="Cobra al final, cuando se van">
-    Ve al módulo **Cuentas**, busca la mesa y verás su **deuda total** con cada orden por separado. Cobra todo junto con **Pagar (todas)** o una orden a la vez. Elige el método de pago y sale el **ticket**. Si cada quien paga lo suyo, liquidas unas órdenes ahora y otras después.
+    Cuando la mesa pide otra ronda, arma la nueva orden, toca **Cobrar → Cuenta**, busca **Mesa 1** por su nombre y selecciónala. Verás su **deuda acumulada** (por ejemplo, **Deuda: $99**) antes de apuntar la nueva orden. Toca **Apuntar a Cuenta** y cada ronda manda su propia comanda a cocina y se suma a la misma cuenta.
     <Frame>
-      <img src="/images/es/flujos-cobro/03-liquidar.jpeg" alt="Cuenta de una mesa con dos órdenes y el botón Pagar para liquidar" />
+      <img src="/images/es/flujos-cobro/agregar-ronda.jpeg" alt="Buscador de socio mostrando Mesa 1 con Deuda 99 pesos al agregar una segunda orden" />
     </Frame>
+    <Note>
+      No hay límite de rondas. Cada orden queda registrada por separado dentro de la cuenta de la mesa, con su hora y sus productos, para que al final tengas el detalle completo del consumo.
+    </Note>
+  </Step>
+  <Step title="Cobra al final, dividiendo si hace falta">
+    Ve al módulo **Cuentas**, busca la mesa y verás su **deuda total** con cada orden por separado (por ejemplo, una de **$105** y otra de **$99**). Desde ahí decides cómo cobrar:
+
+    - **Todo junto:** toca **Pagar (2)** para liquidar todas las órdenes en un solo ticket.
+    - **Cada orden por separado:** usa el botón **Pagar** de cada orden para generar tickets distintos de la misma mesa.
+    - **Método por ticket:** cada cobro elige su propio método (**Efectivo**, **Tarjeta**, **Transferencia** o **Cortesía**). Puedes cobrar una parte en efectivo y otra con tarjeta.
+    - **Monto parcial:** en **Monto a pagar** ajustas cuánto se cubre ahora y dejas el resto pendiente.
+
+    <Frame>
+      <img src="/images/es/flujos-cobro/03-liquidar.jpeg" alt="Detalle de Mesa 1 con dos cuentas pendientes, cada una con su botón Pagar y el botón Pagar dos para todo junto" />
+    </Frame>
+    <Frame>
+      <img src="/images/es/flujos-cobro/pago-metodo.jpeg" alt="Diálogo Pagar Múltiples Cuentas con monto a pagar editable y métodos de pago Efectivo, Tarjeta, Transferencia y Cortesía" />
+    </Frame>
+    <Note>
+      Aquí es donde el flujo de cuenta se vuelve un punto de venta profesional: **una misma mesa se puede cobrar en varios tickets y con distintos métodos de pago**. Ideal cuando cada quien paga lo suyo o cuando el cliente pide factura solo de una parte.
+    </Note>
   </Step>
 </Steps>
 
@@ -54,7 +87,7 @@ El paso a paso de este cobro está en [Cómo cobrar en tu punto de venta](/es/co
 
 ## Cuándo usar cada uno
 
-- **Cuenta abierta:** cuando el cliente consume en varias rondas antes de pagar (mesas, bar, servicio sentado). Te deja mandar comida a cocina sin cerrar la venta.
+- **Cuenta abierta:** cuando el cliente consume en varias rondas antes de pagar (mesas, bar, servicio sentado). Te deja mandar comida a cocina sin cerrar la venta y dividir el cobro al final.
 - **Cobro inmediato:** cuando el cliente paga al pedir (mostrador, ventanilla, para llevar). Más rápido, un solo toque para cerrar.
 
 Un mismo negocio puede usar los dos: cuenta abierta para las mesas y cobro inmediato en la barra para el café para llevar.
