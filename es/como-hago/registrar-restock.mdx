@@ -1,0 +1,64 @@
+---
+title: "Cómo registrar un restock (entrada de inventario)"
+description: "Cuando compras más producto, regístralo como restock para subir el stock y actualizar tu costo. El Nido calcula el costo unitario por ti y te avisa si subió o bajó frente a tu compra anterior."
+icon: "package-plus"
+---
+
+Un restock es una entrada de inventario: producto nuevo que compraste y entra a tu stock. En El Nido lo registras desde el mismo producto, capturas la cantidad y lo que pagaste, y el sistema calcula el **costo unitario** automáticamente. Así tu inventario sube y tu costo queda siempre al día para que tus márgenes cuadren.
+
+## Registra un restock paso a paso
+
+<Steps>
+  <Step title="Entra a Productos">
+    Ve a **Inventario → Productos**. Ahí vive tu catálogo con stock, costo y acciones de cada producto.
+  </Step>
+  <Step title="Abre el menú del producto y elige Ajustar stock">
+    En el renglón del producto, toca el botón de acciones (**...**) y elige **Ajustar stock**. Se abre el diálogo **Ajustar stock — [producto]**, que muestra tu **costo actual** y tu **stock actual**.
+  </Step>
+  <Step title="Captura la cantidad y el costo total">
+    Escribe la **Cantidad** de unidades que entran y el **Costo Total ($)** que pagaste por todas ellas. El Nido divide uno entre otro y te muestra el **Costo Unitario Calculado** en tiempo real, con una flecha que indica si subió o bajó frente a tu costo anterior.
+  </Step>
+  <Step title="Elige la ubicación (si aplica) y agrega una nota">
+    Si el producto maneja **ubicaciones**, elige la **Ubicación de destino** donde entra el stock. Puedes agregar una **Nota (opcional)**, por ejemplo *"Compra en Costco"*, para saber después de dónde vino ese lote.
+  </Step>
+  <Step title="Registra el restock">
+    Toca **Registrar Restock**. El stock sube por la cantidad que capturaste y el costo del producto se actualiza con el nuevo costo unitario. El botón se habilita en cuanto el costo unitario es mayor a cero.
+  </Step>
+</Steps>
+
+## El costo unitario se recalcula solo
+
+No tienes que sacar la cuenta a mano. Cuando escribes cantidad y costo total, El Nido calcula el **costo unitario** de ese lote y lo compara con tu costo anterior:
+
+- **Flecha hacia arriba (rojo):** el producto te salió más caro que la última vez.
+- **Flecha hacia abajo (verde):** te salió más barato.
+- **Sin cambio:** pagaste lo mismo.
+
+Así detectas de inmediato si un proveedor te subió el precio, antes de que se te coma el margen.
+
+## Productos con variantes o receta
+
+El diálogo **Ajustar stock** se adapta al tipo de producto:
+
+- **Producto simple:** capturas cantidad y costo total, como arriba.
+- **Por variante** (ej. tallas o sabores): agregas unidades a cada variante por separado, porque el stock vive en cada una.
+- **Usa insumos** (producto con receta): no subes stock del producto directo; reabasteces los **insumos** con los que se arma, y su disponibilidad se recalcula sola.
+
+## Restock, merma y conteo no son lo mismo
+
+Tres acciones distintas en el mismo menú del producto:
+
+- **Ajustar stock (restock):** sube el stock cuando compras más y actualiza el costo.
+- **Registrar Merma:** baja el stock por una pérdida (caducado, dañado, consumo interno) y guarda el costo.
+- **Conteo Físico:** reconcilia el stock con lo que contaste en la barra cuando no cuadra.
+
+Si solo capturaste mal una cantidad, usa **Conteo Físico**. El restock es para producto que de verdad entró a tu inventario.
+
+<CardGroup cols={2}>
+  <Card title="Lleva el control de tu inventario con El Nido" icon="arrow-right" color="#F59E0B" href="https://elnidopos.com">
+    Prueba 14 días gratis del plan completo. Setup en 2 minutos, sin comisiones por venta.
+  </Card>
+  <Card title="Agenda una demo por WhatsApp" icon="message-circle" color="#22C55E" href="https://wa.me/524773728094?text=Hola,%20vi%20la%20documentaci%C3%B3n%20de%20El%20Nido%20y%20quiero%20una%20demo">
+    Te mostramos El Nido con tu negocio en 15 minutos.
+  </Card>
+</CardGroup>
