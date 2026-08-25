@@ -12,43 +12,36 @@ Un restock es una entrada de inventario: producto nuevo que compraste y entra a 
   <Step title="Entra a Productos">
     Ve a **Inventario → Productos**. Ahí vive tu catálogo con stock, costo y acciones de cada producto.
   </Step>
-  <Step title="Abre el menú del producto y elige Ajustar stock">
-    En el renglón del producto, toca el botón de acciones (**...**) y elige **Ajustar stock**. Se abre el diálogo **Ajustar stock — [producto]**, que muestra tu **costo actual** y tu **stock actual**.
+  <Step title="Abre el menú del producto y elige Agregar Restock">
+    En el renglón del producto, toca el botón de acciones (**...**) y elige **Agregar Restock**.
+    <Frame>
+      <img src="/images/es/restock/01-menu-agregar-restock.png" alt="Menú de acciones de un producto con la opción Agregar Restock resaltada" />
+    </Frame>
   </Step>
   <Step title="Captura la cantidad y el costo total">
-    Escribe la **Cantidad** de unidades que entran y el **Costo Total ($)** que pagaste por todas ellas. El Nido divide uno entre otro y te muestra el **Costo Unitario Calculado** en tiempo real, con una flecha que indica si subió o bajó frente a tu costo anterior.
+    El diálogo muestra el **Costo actual** y el **Stock actual** del producto. Escribe la **Cantidad** de unidades que entran y el **Costo Total ($)** que pagaste por todas ellas. El Nido divide uno entre otro y te muestra el **Costo Unitario Calculado** en tiempo real.
+    <Frame>
+      <img src="/images/es/restock/02-dialogo-restock.png" alt="Diálogo Agregar Restock con los campos Cantidad, Costo Total y el Costo Unitario Calculado" />
+    </Frame>
   </Step>
-  <Step title="Elige la ubicación (si aplica) y agrega una nota">
-    Si el producto maneja **ubicaciones**, elige la **Ubicación de destino** donde entra el stock. Puedes agregar una **Nota (opcional)**, por ejemplo *"Compra en Costco"*, para saber después de dónde vino ese lote.
-  </Step>
-  <Step title="Registra el restock">
-    Toca **Registrar Restock**. El stock sube por la cantidad que capturaste y el costo del producto se actualiza con el nuevo costo unitario. El botón se habilita en cuanto el costo unitario es mayor a cero.
+  <Step title="Agrega una nota y registra">
+    Puedes agregar una **Nota (opcional)**, por ejemplo *"Compra en Costco"*, para saber después de dónde vino ese lote. Toca **Registrar Restock**: el stock sube por la cantidad que capturaste y el costo del producto se actualiza con el nuevo costo unitario.
   </Step>
 </Steps>
 
+<Note>
+  Si tu negocio maneja **varias sucursales**, el diálogo te indica a qué sucursal se asignará la entrada (ej. *"Esta entrada se asignará a la sucursal Sucursal Principal"*). El stock sube en esa sucursal.
+</Note>
+
 ## El costo unitario se recalcula solo
 
-No tienes que sacar la cuenta a mano. Cuando escribes cantidad y costo total, El Nido calcula el **costo unitario** de ese lote y lo compara con tu costo anterior:
-
-- **Flecha hacia arriba (rojo):** el producto te salió más caro que la última vez.
-- **Flecha hacia abajo (verde):** te salió más barato.
-- **Sin cambio:** pagaste lo mismo.
-
-Así detectas de inmediato si un proveedor te subió el precio, antes de que se te coma el margen.
-
-## Productos con variantes o receta
-
-El diálogo **Ajustar stock** se adapta al tipo de producto:
-
-- **Producto simple:** capturas cantidad y costo total, como arriba.
-- **Por variante** (ej. tallas o sabores): agregas unidades a cada variante por separado, porque el stock vive en cada una.
-- **Usa insumos** (producto con receta): no subes stock del producto directo; reabasteces los **insumos** con los que se arma, y su disponibilidad se recalcula sola.
+No tienes que sacar la cuenta a mano. Cuando escribes cantidad y costo total, El Nido calcula el **costo unitario** de ese lote (costo total ÷ cantidad). Así, si un proveedor te sube el precio, lo ves reflejado de inmediato en tu costo y en tu markup, antes de que se te coma el margen.
 
 ## Restock, merma y conteo no son lo mismo
 
 Tres acciones distintas en el mismo menú del producto:
 
-- **Ajustar stock (restock):** sube el stock cuando compras más y actualiza el costo.
+- **Agregar Restock:** sube el stock cuando compras más y actualiza el costo.
 - **Registrar Merma:** baja el stock por una pérdida (caducado, dañado, consumo interno) y guarda el costo.
 - **Conteo Físico:** reconcilia el stock con lo que contaste en la barra cuando no cuadra.
 
