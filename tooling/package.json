@@ -1,0 +1,14 @@
+{
+  "name": "elnido-docs-tooling",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Robot de capturas para la documentación de El Nido (reemplaza Scribe).",
+  "scripts": {
+    "login": "node capture.mjs --login",
+    "shot": "node capture.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}
