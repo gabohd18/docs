@@ -1,0 +1,105 @@
+---
+title: "Cómo aplicar descuentos al cobrar"
+description: "Descuenta un artículo suelto o toda la orden desde el punto de venta de El Nido, en porcentaje o en pesos. El total baja al momento, el descuento sale en el ticket del cliente y queda registrado en el historial de ventas."
+icon: "percent"
+---
+
+En El Nido hay dos descuentos en el punto de venta: a **un artículo** del ticket o a **la orden completa**. En los dos capturas porcentaje o monto en pesos, y el total se recalcula solo. El descuento queda guardado en la venta, aparece en el ticket del cliente y se ve después en tu historial.
+
+## Descuento a un artículo
+
+Úsalo cuando le bajas el precio a un producto del ticket, no a todo lo que lleva el cliente.
+
+<Steps>
+  <Step title="Agrega el producto al ticket">
+    Tócalo desde el catálogo como en cualquier venta, con sus variedades y modificadores si los lleva.
+  </Step>
+  <Step title="Toca el botón de etiqueta en esa línea">
+    En el carrito, cada artículo tiene sus controles: **−**, la cantidad, **+**, un botón con icono de **etiqueta** y otro de nota. La etiqueta es el descuento. Cuando el artículo ya trae uno, ese botón se queda pintado en rosa.
+  </Step>
+  <Step title="Elige Porcentaje o Monto y captura el valor">
+    Se abre **Descuento al artículo** con dos pestañas: **Porcentaje** y **Monto**. Escribe el número y toca **Aplicar**. En tablet o celular sale el teclado numérico en pantalla; en laptop lo escribes con el teclado y **Enter** aplica.
+  </Step>
+  <Step title="Verifica la línea">
+    El artículo muestra el precio original tachado, el precio nuevo abajo y la etiqueta del descuento (*-20%* o *-$15*) en rosa. Para quitarlo, vuelve a tocar la etiqueta y usa **Quitar descuento**.
+  </Step>
+</Steps>
+
+<Note>
+  El porcentaje se calcula sobre **(precio + modificadores) × cantidad**. Si el cliente pidió un latte con leche de almendra y jarabe, el descuento también aplica sobre esos extras.
+</Note>
+
+## Descuento a toda la orden
+
+Es el clásico "te dejo el 10% de todo".
+
+<Steps>
+  <Step title="Arma el ticket completo">
+    El botón de descuento a la orden aparece hasta que hay algo en el carrito.
+  </Step>
+  <Step title="Toca Agregar descuento">
+    Está abajo del carrito, junto al resumen de Subtotal y Total.
+  </Step>
+  <Step title="Captura porcentaje o monto y aplica">
+    Se abre **Descuento a la orden**, igual que el de artículo: **Porcentaje** o **Monto**, el valor, **Aplicar**.
+  </Step>
+  <Step title="Cóbralo normal">
+    En el resumen queda un renglón **Descuento 10%** en rosa con el monto que se restó y una **X** para quitarlo. Toca **Cobrar** y sigue con el método de pago de siempre.
+  </Step>
+</Steps>
+
+## Cómo se suman los descuentos
+
+Sí se acumulan, y el orden importa: el descuento a la orden se calcula sobre lo que queda **después** de los descuentos por artículo.
+
+```
+Subtotal                    $300
+Desc. artículos              -$30   (capturado línea por línea)
+Descuento 10%                -$27   (10% de $270, no de $300)
+Canje de puntos               -$0
+─────────────────────────────────
+Total                       $243
+```
+
+El total nunca baja de cero. Si el descuento se pasa de lo que se debe, el cobro queda en $0 y no se genera saldo a favor.
+
+## Descuento al cobrar una cuenta
+
+Si el cliente consumió a cuenta (fiado) y viene a liquidar con descuento, no lo hagas en dos operaciones. En **Cuentas**, al cobrar una cuenta o varias a la vez, hay un campo **Descuento (opcional)** en porcentaje o en pesos. Capturas el descuento y el **monto a pagar baja solo**.
+
+- Con varias cuentas seleccionadas, el descuento se reparte **proporcional** a lo que cada una debe.
+- La parte descontada se registra como condonación con motivo **Descuento al cobrar** (o *Descuento al liquidar* cuando son varias).
+- Eso pega en la utilidad del **mes en que diste el descuento**, no del mes de la venta: la venta ya contó su ingreso cuando se fue a cuenta.
+- El campo no aparece si cobras como **cortesía**, porque ahí ya estás perdonando todo.
+
+## Dónde queda registrado
+
+- **Ticket del cliente:** un renglón **Descuento** con el monto restado, arriba del total.
+- **Historial de ventas:** el descuento de un artículo se muestra completo en ese artículo; el de la orden se reparte proporcional entre las líneas del ticket, para que la suma cuadre con lo que de verdad descontaste.
+- **Corte de caja y estado de resultados:** entra el ingreso neto, ya con el descuento restado.
+
+## Cuidados antes de descontar
+
+<Warning>
+  **El descuento puede matar el sello de puntos.** El sello se otorga contra el total *después* del descuento. Si tu compra mínima por sello es de $100 y bajas un ticket de $110 a $95, esa venta ya no sella.
+</Warning>
+
+- **No hay permiso ni tope aparte.** Cualquier empleado que puede registrar ventas puede aplicar un descuento, del tamaño que sea. Si te preocupa, revísalo en el historial de ventas.
+- **El descuento no pide motivo.** La cortesía sí lo exige; el descuento no. Si necesitas saber *por qué* se bajó el precio, la cortesía te deja el rastro.
+- **Un monto mayor a la base no aplica y no avisa.** Si intentas descontar $200 a un artículo de $150, el botón **Aplicar** no hace nada. Baja el monto o usa porcentaje.
+- **Los premios de lealtad ya vienen descontados.** La línea de premio se agrega con su descuento fijo y no se puede editar ni sumarle otro.
+
+## Cuándo NO usar un descuento
+
+- **Vas a regalar el producto completo:** usa **cortesía** al cobrar. Pide motivo, deja al cajero registrado y sale del ingreso, que es como debe verse el consumo interno.
+- **El precio nuevo es permanente:** edita el precio del producto o crea una variedad. Descontar a mano cada venta te va a fallar el día que no estés en la barra.
+- **Es una promoción recurrente (2x1, happy hour, cupones):** hoy se captura a mano en cada venta. El Nido todavía no aplica descuentos automáticos por horario ni códigos de cupón.
+
+<CardGroup cols={2}>
+  <Card title="Cobra con descuentos desde hoy" icon="arrow-right" color="#F59E0B" href="https://elnidopos.com">
+    Prueba 14 días gratis del plan completo. Setup en 2 minutos, sin comisiones por venta.
+  </Card>
+  <Card title="Agenda una demo por WhatsApp" icon="message-circle" color="#22C55E" href="https://wa.me/524773728094?text=Hola,%20vi%20la%20documentaci%C3%B3n%20de%20El%20Nido%20y%20quiero%20una%20demo">
+    Te mostramos El Nido con tu negocio en 15 minutos.
+  </Card>
+</CardGroup>
